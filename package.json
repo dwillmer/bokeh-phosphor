@@ -5,7 +5,13 @@
   "main": "lib/bundle.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
+    "phosphor-arrays": "^1.0.6",
+    "phosphor-boxengine": "^1.0.1",
     "phosphor-boxpanel": "1.0.0-rc.0",
+    "phosphor-domutil": "^1.2.0",
+    "phosphor-messaging": "^1.0.6",
+    "phosphor-panel": "^1.0.0-rc.0",
+    "phosphor-properties": "^2.0.0",
     "phosphor-widget": "^1.0.0-rc.0"
   },
   "devDependencies": {
@@ -27,7 +33,7 @@
     "build:css": "node scripts/copycss.js",
     "build": "npm run build:src",
     "postinstall": "npm dedupe",
-    "prepublish": "npm run build",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
