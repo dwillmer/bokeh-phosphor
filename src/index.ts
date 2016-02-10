@@ -1,3 +1,3 @@
 
-export {Widget, Layout} from 'phosphor-widget';
-export {BoxPanel} from 'phosphor-boxpanel';
+export * from 'phosphor-widget';
+export * from 'phosphor-boxpanel';
