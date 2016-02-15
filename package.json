@@ -32,7 +32,7 @@
     "build:example": "webpack --config example/webpack.conf.js",
     "build:src": "tsc --project src",
     "build:css": "node scripts/copycss.js",
-    "build": "npm run build:src",
+    "build": "npm run build:src && npm run build:css",
     "postinstall": "npm dedupe",
     "prepublish": "npm run build"
   },
