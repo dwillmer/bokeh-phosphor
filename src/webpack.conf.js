@@ -6,7 +6,7 @@ module.exports = {
     library: "bokeh_phosphor"
   },
   resolve: {
-    extensions: ['', '.ts', '.js']
+    extensions: ['', '.ts', '.js', '.css']
   },
   module: {
     loaders: [

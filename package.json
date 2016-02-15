@@ -2,7 +2,7 @@
   "name": "bokeh-phosphor",
   "version": "0.1.0",
   "description": "Bokeh phosphor build",
-  "main": "lib/bundle.js",
+  "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "dependencies": {
     "phosphor-arrays": "^1.0.6",
@@ -30,7 +30,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build:example": "webpack --config example/webpack.conf.js",
-    "build:src": "tsc --project src && webpack --config src/webpack.conf.js",
+    "build:src": "tsc --project src",
     "build:css": "node scripts/copycss.js",
     "build": "npm run build:src",
     "postinstall": "npm dedupe",
