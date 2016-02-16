@@ -31,7 +31,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build:example": "webpack --config example/webpack.conf.js",
-    "build:src": "tsc --project src",
+    "build:src": "tsc --project src && webpack --config src/webpack.conf.js",
     "build:css": "node scripts/copycss.js",
     "build": "npm run build:src && npm run build:css",
     "postinstall": "npm dedupe",
